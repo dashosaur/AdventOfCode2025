@@ -1,6 +1,6 @@
-# Advent of Code 2024
+# Advent of Code 2025
 
-These are my [Advent of Code 2024](https://adventofcode.com/2024) puzzle solutions and puzzle running tool. The solutions and tool are written in Swift and can be run as a command line tool on macOS or with the included Xcode project. The tool can optionally download and cache puzzle input from adventofcode.com or print private leaderboard statistics if a session cookie is provided.
+These are my [Advent of Code 2025](https://adventofcode.com/2025) puzzle solutions and puzzle running tool. The solutions and tool are written in Swift and can be run as a command line tool on macOS or with the included Xcode project. The tool can optionally download and cache puzzle input from adventofcode.com or print private leaderboard statistics if a session cookie is provided.
 
 ## Running Puzzles
 
