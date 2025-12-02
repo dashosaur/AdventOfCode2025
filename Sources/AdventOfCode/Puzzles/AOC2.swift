@@ -35,10 +35,8 @@ extension Int {
     
     var hasRepeatingDigits: Bool {
         let text = String(self)
-        for chunkSize in 1..<(text.count/2 + 1) {
-            guard text.count % chunkSize == 0 else { continue }
-            let chunks = text.chunks(ofCount: chunkSize)
-            if chunks.count > 1, chunks.allSatisfy({ $0 == chunks.first }) {
+        for chunkSize in 1..<(text.count/2 + 1) where text.count % chunkSize == 0 {
+            if String(repeating: String(text.prefix(chunkSize)), count: text.count/chunkSize) == text {
                 return true
             }
         }
