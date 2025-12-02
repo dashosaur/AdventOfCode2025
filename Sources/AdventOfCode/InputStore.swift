@@ -35,7 +35,7 @@ struct InputStore {
         do {
             try input = String(contentsOf: URL(string: inputURLString)!, encoding: .utf8)
         } catch {
-            fatalError("Download failed")
+            fatalError("Download failed: \(error)")
         }
         
         if input.contains("Please log in to get your puzzle input.") {
