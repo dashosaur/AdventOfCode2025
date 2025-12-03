@@ -61,13 +61,17 @@ struct PuzzleTests {
         let puzzle = AOC3()
         
         let input1 = """
+        987654321111111
+        811111111111119
+        234234234234278
+        818181911112111
         """
         
-        #expect(puzzle.solve1(input: input1) == 0)
+        #expect(puzzle.solve1(input: input1) == 357)
         
         let input2 = input1
         
-        #expect(puzzle.solve2(input: input2) == 0)
+        #expect(puzzle.solve2(input: input2) == 3121910778619)
     }
     
     @Test
