@@ -103,13 +103,24 @@ struct PuzzleTests {
         let puzzle = AOC5()
         
         let input1 = """
+        3-5
+        10-14
+        16-20
+        12-18
+
+        1
+        5
+        8
+        11
+        17
+        32
         """
         
-        #expect(puzzle.solve1(input: input1) == 0)
+        #expect(puzzle.solve1(input: input1) == 3)
         
         let input2 = input1
         
-        #expect(puzzle.solve2(input: input2) == 0)
+        #expect(puzzle.solve2(input: input2) == 14)
     }
     
     @Test
