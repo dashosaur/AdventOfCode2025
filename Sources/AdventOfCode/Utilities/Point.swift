@@ -157,4 +157,8 @@ struct Point3D: Hashable {
     func manhattanDistance(to other: Point3D) -> Int {
         abs(other.x - x) + abs(other.y - y) + abs(other.z - z)
     }
+    
+    func euclideanDistance(to other: Point3D) -> Double {
+        sqrt(Double(pow((other.x - x), 2) + pow((other.y - y), 2) + pow((other.z - z), 2)))
+    }
 }
