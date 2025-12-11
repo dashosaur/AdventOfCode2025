@@ -33,6 +33,12 @@ struct Point: Hashable {
     static let unitDiagnonalVectors = [Point(1, 1), Point(1, -1), Point(-1, 1), Point(-1, -1)]
     static let allUnitVectors: [Point] = unitVectors + unitDiagnonalVectors
     
+    static func midpoint(_ p1: Point, _ p2: Point) -> Point {
+        let mx = p1.x + (p2.x - p1.x) / 2
+        let my = p1.y + (p2.y - p1.y) / 2
+        return Point(mx, my)
+    }
+    
     var neighbors: [Point] {
         Self.unitVectors.map { self + $0 }
     }
@@ -162,3 +168,4 @@ struct Point3D: Hashable {
         sqrt(Double(pow((other.x - x), 2) + pow((other.y - y), 2) + pow((other.z - z), 2)))
     }
 }
+

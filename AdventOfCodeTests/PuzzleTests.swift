@@ -210,9 +210,17 @@ struct PuzzleTests {
         let puzzle = AOC9()
         
         let input1 = """
+        7,1
+        11,1
+        11,7
+        9,7
+        9,5
+        2,5
+        2,3
+        7,3
         """
         
-        #expect(puzzle.solve1(input: input1) == 0)
+        #expect(puzzle.solve1(input: input1) == 50)
         
         let input2 = input1
         
@@ -224,9 +232,12 @@ struct PuzzleTests {
         let puzzle = AOC10()
         
         let input1 = """
+        [.##.] (3) (1,3) (2) (2,3) (0,2) (0,1) {3,5,4,7}
+        [...#.] (0,2,3,4) (2,3) (0,4) (0,1,2) (1,2,3,4) {7,5,12,7,2}
+        [.###.#] (0,1,2,3,4) (0,3,4) (0,1,2,4,5) (1,2) {10,11,11,5,10,5}
         """
         
-        #expect(puzzle.solve1(input: input1) == 0)
+        #expect(puzzle.solve1(input: input1) == 7)
         
         let input2 = input1
         
@@ -238,13 +249,37 @@ struct PuzzleTests {
         let puzzle = AOC11()
         
         let input1 = """
+        aaa: you hhh
+        you: bbb ccc
+        bbb: ddd eee
+        ccc: ddd eee fff
+        ddd: ggg
+        eee: out
+        fff: out
+        ggg: out
+        hhh: ccc fff iii
+        iii: out
         """
         
-        #expect(puzzle.solve1(input: input1) == 0)
+        #expect(puzzle.solve1(input: input1) == 5)
         
-        let input2 = input1
+        let input2 = """
+        svr: aaa bbb
+        aaa: fft
+        fft: ccc
+        bbb: tty
+        tty: ccc
+        ccc: ddd eee
+        ddd: hub
+        hub: fff
+        eee: dac
+        dac: fff
+        fff: ggg hhh
+        ggg: out
+        hhh: out
+        """
         
-        #expect(puzzle.solve2(input: input2) == 0)
+        #expect(puzzle.solve2(input: input2) == 2)
     }
     
     @Test
