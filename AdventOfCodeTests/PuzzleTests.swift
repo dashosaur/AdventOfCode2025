@@ -224,7 +224,7 @@ struct PuzzleTests {
         
         let input2 = input1
         
-        #expect(puzzle.solve2(input: input2) == 0)
+        #expect(puzzle.solve2(input: input2) == 24)
     }
     
     @Test
